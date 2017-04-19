@@ -8,7 +8,7 @@
     <!-- Mobile Viewport -->
 	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- Most important SEO tag -->
-    <title>HTML5 | Webdesign II | GDM</title>
+    <title>Webd2 | Olivier Moeyaert | Styleguide</title>
     <!-- Other SEO friendly tags -->	
     <meta name="description" content="Lees hier alles over nieuwe media, html5 en andere ontwikkelingen in webdevelopment en mobile development. De docenten NMD willen graag hun kennis delen met jou!">
     <meta name="keywords" content="HTML5, JavaScript, jQuery, CSS3">
@@ -51,15 +51,59 @@
     <!-- Modernizr: feature detection -->
     <script src="vendor/modernizr/modernizr.min.js"></script>
   </head>
-
   <body>
-    <div class="intro">
-      <h1>"(NAME) Design Agency"</h1>
-      <p>We make designs for companies</p>
+      <!-- Header navigatt -->
+      <div class="grid__wrapper">
+        <div class="grid__container">
+            <div class="grid__row">
+                <div class="grid__column-12">
+                <nav>
+                    <ul>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">portfolio</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </nav>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Body: content -->
+      <div class="grid__wrapper">
+        <div class="grid__container">
+            <div class="grid__row">
+                <div class="grid__column-3">kolom 1</div>
+                <div class="grid__column-3">kolom 2</div>
+                <div class="grid__column-3">kolom 3</div>
+                <div class="grid__column-3">kolom 4</div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="grid__wrapper footer-wrapper">
+	    <div class="grid__container">
+		    <div class="grid__row">
+			    <div class="grid__column-12">
+				    <footer class="footer">
+					    <h1 class="hidden">Main Footer Website</h1>
+					    <div class="grid__row">
+						<div class="grid__column-4">
+							Copyright
+						</div>
+						<div class="grid__column-4">
+							...
+						</div>
+						<div class="grid__column-4">
+							Developed by....
+						</div>
+					    </div>
+				    </footer>
+			    </div>
+		    </div>
+	    </div>
     </div>
-    <!-- Scripts: Vendors -->
-      <!-- For example: jQuery, lodash, handlebars, ... -->
-    <!-- Scripts: App -->
-    <script src="js/main.js"></script>
+
   </body>
 </html>
