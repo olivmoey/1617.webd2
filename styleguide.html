@@ -36,7 +36,7 @@
     <link rel="icon" type="image/png" href="assets/icons/favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="assets/icons/manifest.json">
     <link rel="mask-icon" href="assets/icons/safari-pinned-tab.svg" color="#ee9900">
-    <link rel="shortcut icon" href="assets/icons/favicon.ico">
+    <link rel="shortcut icon" href="assets/icons/favicon.png">
     <meta name="apple-mobile-web-app-title" content="GDM">
     <meta name="application-name" content="GDM">
     <meta name="msapplication-config" content="assets/icons/browserconfig.xml">
@@ -46,22 +46,32 @@
     <!-- Stylesheets: App -->
     <link rel="stylesheet" media="all" href="css/grid.css">
     <link rel="stylesheet" media="all" href="css/fonts.css">
+    <link rel="stylesheet" media="all" href="css/font-awesome.min.css">
     <link rel="stylesheet" media="all" href="css/typography.css">
     <link rel="stylesheet" media="all" href="css/main.css">
     <!-- Modernizr: feature detection -->
     <script src="vendor/modernizr/modernizr.min.js"></script>
   </head>
   <body>
-      <!-- Header navigatt -->
-      <div class="grid__wrapper">
+      <!-- Header navigatie -->
+      
+      <div class="grid__wrapper grid__navigatie">
         <div class="grid__container">
             <div class="grid__row">
                 <div class="grid__column-12">
                 <nav>
+                    <div class="header">
+                        <a class="logo" href="index.html"><img src="assets/images/inktdrop.png" alt="logo" style="height:75px"></a>
+                        <button class="handle">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                    </div>
                     <ul>
-                        <li><a href="#">home</a></li>
-                        <li><a href="#">portfolio</a></li>
+                        <li><a href="#">over ons</a></li>
                         <li><a href="#">contact</a></li>
+                        <li><a href="#">diensten</a></li>
+                        <li><a href="#">portfolio</a></li>
+                        <li><a href="#">home</a></li>
                     </ul>
                 </nav>
                 </div>
@@ -69,14 +79,21 @@
         </div>
       </div>
 
+<section class="hero">
+  <div class="hero__text">
+    <h2 class="hero__title">Welkom bij Inktdrop</h2>
+    <p>Design agency</p>
+    <a href="#" class="main__button">Contact</a>
+  </div>
+</section>
+
       <!-- Body: content -->
       <div class="grid__wrapper">
         <div class="grid__container">
             <div class="grid__row">
-                <div class="grid__column-3">kolom 1</div>
-                <div class="grid__column-3">kolom 2</div>
-                <div class="grid__column-3">kolom 3</div>
-                <div class="grid__column-3">kolom 4</div>
+                <div class="grid__column-4">kolom 1</div>
+                <div class="grid__column-4">kolom 2</div>
+                <div class="grid__column-4">kolom 3</div>
             </div>
         </div>
       </div>
@@ -87,16 +104,17 @@
 		    <div class="grid__row">
 			    <div class="grid__column-12">
 				    <footer class="footer">
-					    <h1 class="hidden">Main Footer Website</h1>
+					    <h1 class="hidden"></h1>
 					    <div class="grid__row">
 						<div class="grid__column-4">
-							Copyright
+							Copyright 2017 Inktdrop
 						</div>
 						<div class="grid__column-4">
-							...
+							Contact
+
 						</div>
 						<div class="grid__column-4">
-							Developed by....
+							Developed by Olivier Moeyaert
 						</div>
 					    </div>
 				    </footer>
