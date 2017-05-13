@@ -128,11 +128,11 @@ footer css
 .footer__title {
   color: #0fc2ff;
 }
-footer a {
+.links {
   text-decoration: none;
   color: #FFF
 }
-footer a:hover {
+.links:hover {
   padding-bottom: 2px; 
   border-bottom: solid 1px #FFF;
 }
