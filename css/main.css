@@ -1,29 +1,33 @@
 html, body {
   margin: 0;
   padding: 0;
+  font-family: 'Lato', sans-serif;
 }
-
 body {
   color: white;
 }
 
 
-.grid__navigatie {
-  background: #1a1355;
-  height: 75px;
+/**
+navigatie css
+*/
+
+nav {
   overflow: hidden;
 }
-
+.navigation {
+  background: #1a1355;
+  margin: 0 0 25px 0;
+}
 .header {
   float: left;
   text-decoration: none;
   padding: 0;
 }
-
-.handle {
+.menu {
   float: right;
-  background: 1a1355;
-  color: #009cd3;
+  background: #1a1355;
+  color: #0fc2ff;
   border: none;
   font-size: 18px;
   padding: 5px 10px;
@@ -31,63 +35,38 @@ body {
   cursor: pointer;
   display: none;
 }
-
-.grid__navigatie a {
+nav a {
+  font-size: 12px;
   text-decoration: none;
-  color: #009cd3;
+  color: inherit;
 }
-
-.grid__navigatie ul {
+nav ul a:hover {
+  padding-bottom: 2px; 
+  border-bottom: solid 1px #0fc2ff;
+}
+.active {
+  padding-bottom: 2px; 
+  border-bottom: solid 1px #0fc2ff;
+}
+nav ul {
   overflow: hidden;
-  color: #009cd3;
+  color: #0fc2ff;
   margin: 0;
   padding: 0;
   text-align: center;
-}
-
-.grid__navigatie ul li {
-  font-family: Lato;
-  font-weight: bold;
   float: right;
+}
+nav ul li {
   display: inline-block;
+  font-weight: bold;
   padding: 25px 25px;
 }
 
-.grid__navigatie ul li:hover {
-  text-decoration: underline;
-}
 
-section {
-  box-sizing: border-box;
-  width: 70%;
-  margin: 0 auto;
-  padding: 20px;
-}
 
-@media screen and (max-width: 767px) {
-  .header {
-    float: none;
-  }
-  .grid__navigatie ul {
-    background: #1a1355;
-    max-height: 0;
-    width: 100%
-  }
-  .grid__navigatie ul.show {
-    max-height: 20em;
-  }
-  .grid__navigatie ul li {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 15px;
-  }
-  .handle {
-    display: inline;
-  }
-  section {
-    width: 100%;
-  }
-}
+/**
+hero image css
+*/
 
 .hero {
   background: #CCC url('assets/images/home.jpg') no-repeat;
@@ -113,6 +92,12 @@ section {
   font-size: 3rem;
   font-weight: 300;
 }
+
+
+/**
+button css
+*/
+
 .main__button {
   display: inline-block;
   padding: 12px 20px;
@@ -120,9 +105,34 @@ section {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
-  margin-top: 20px;
 }
 .main__button:hover {
-  color: #white;
+  color: white;
   background: #0fc2ff;
+}
+
+
+
+/**
+footer css
+*/
+
+.footer-wrapper {
+  background: #1a1355;
+  padding:25px;
+  margin: 25px 0 0 0;
+}
+.footer__text {
+  font-size: 12px;
+}
+.footer__title {
+  color: #0fc2ff;
+}
+footer a {
+  text-decoration: none;
+  color: #FFF
+}
+footer a:hover {
+  padding-bottom: 2px; 
+  border-bottom: solid 1px #FFF;
 }
