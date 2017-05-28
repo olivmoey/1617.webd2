@@ -32,14 +32,12 @@
     <!-- Icons -->
     <!-- http://realfavicongenerator.net/ -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="assets/icons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="assets/icons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
     <link rel="manifest" href="assets/icons/manifest.json">
-    <link rel="mask-icon" href="assets/icons/safari-pinned-tab.svg" color="#ee9900">
-    <link rel="shortcut icon" href="assets/icons/favicon.ico">
-    <meta name="apple-mobile-web-app-title" content="GDM">
-    <meta name="application-name" content="GDM">
-    <meta name="msapplication-config" content="assets/icons/browserconfig.xml">
+    <link rel="mask-icon" href="assets/icons/safari-pinned-tab.svg" color="#0fc2ff">
+    <meta name="apple-mobile-web-app-title" content="Inktdrop">
+    <meta name="application-name" content="Inktdrop">
     <meta name="theme-color" content="#ffffff">
     <!-- Stylesheets: Vendors -->
     <link rel="stylesheet" media="all" href="vendor/normalize/normalize.css">
@@ -76,6 +74,7 @@
 
 <div class="main">
   
+  
 
       <div class="grid__wrapper ">
         <div class="grid__container">
@@ -86,8 +85,47 @@
             </div>
         </div>
       </div>
-</div>
 
+
+
+<div class="grid__wrapper">
+        <div class="grid__container">
+            <div class="grid__row">
+              <div class="grid__column-4 form">
+                    <form action="/action_page.php">
+
+                        <label for="fname">Voornaam</label>
+                        <input type="text" id="fname" name="voornaam">
+
+                        <label for="lname">Achternaam</label>
+                        <input type="text" id="lname" name="achternaam">
+
+                        <label for="lname">E-mail</label>
+                        <input type="text" id="lname" name="email">
+
+                        <label for="lname">Onderwerp</label>
+                        <input type="text" id="lname" name="onderwerp">
+                    </form>
+            </div>
+              <div class="grid__column-4 form">
+                <form action="/action_page.php">
+                    <label for="subject">Bericht</label>
+                     <textarea id="subject" name="bericht" style="height:243px"></textarea>
+
+                    <input type="submit" value="verstuur">
+                </form>
+              </div>
+              <div class="grid__column-4">
+                  <h1>Contact</h1>
+                  
+                  <p>Kapellestraat 37,<br>8210 Loppem</p>
+                  <p>0478 67 22 71<br>
+                  info@inktdrop.be</p>
+              </div>
+            </div>
+        </div>
+      </div>
+</div>
 
 
       <div class="footer-wrapper">
@@ -118,6 +156,7 @@
 		</div>
 	</div>
 </div>
+
 
 
   </body>
